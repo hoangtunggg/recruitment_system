@@ -1,0 +1,36 @@
+{
+  "name": "@recruitment/api",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Inactive target Modular Monolith API skeleton",
+  "scripts": {
+    "build": "nest build",
+    "check-types": "tsc --noEmit -p tsconfig.build.json",
+    "lint": "oxlint .",
+    "test": "node --import tsx --test test/*.spec.ts",
+    "migration:create": "mikro-orm migration:create --config mikro-orm.config.ts",
+    "migration:up": "mikro-orm migration:up --config mikro-orm.config.ts",
+    "migration:down": "mikro-orm migration:down --config mikro-orm.config.ts",
+    "migration:list": "mikro-orm migration:list --config mikro-orm.config.ts",
+    "migration:check": "mikro-orm migration:check --config mikro-orm.config.ts"
+  },
+  "dependencies": {
+    "@mikro-orm/core": "7.0.10",
+    "@mikro-orm/decorators": "7.0.10",
+    "@mikro-orm/migrations": "7.0.10",
+    "@mikro-orm/nestjs": "7.0.1",
+    "@mikro-orm/postgresql": "7.0.10",
+    "@nestjs/config": "^4.0.2",
+    "@nestjs/common": "11.1.19",
+    "@nestjs/core": "11.1.19",
+    "@nestjs/platform-express": "^11.0.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@mikro-orm/cli": "7.0.10",
+    "tsx": "4.21.0"
+  }
+}
